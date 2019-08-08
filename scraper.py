@@ -14,7 +14,7 @@ def scrape_table(elephant):
         if table_cells: 
             #add to the variable record (a dictionary) these pairs: label 'artist': the text in the first [0] table_cells item...
             record['Horse'] = table_cells[0].text_content()
-            #create variable ‘table_cellsurls’ and put in it any links within the first table_cells item    
+#             create variable ‘table_cellsurls’ and put in it any links within the first table_cells item    
             table_cellsurls = table_cells[0].cssselect("a")
             #grab the href=” attribute and put that in ‘HorseURL’
             record['HorseURL'] = table_cellsurls[0].attrib.get('href')
