@@ -49,3 +49,7 @@ def scrape_and_look_for_next_link(url):
 # START HERE: define your starting URL - then call a function to scrape it
 starting_url = 'http://www.horsedeathwatch.com/'
 scrape_and_look_for_next_link(starting_url)
+
+#Usetheurllib.urlopenfunctiontoopentheURL'properly'soitworks
+horselinkurl=urllib.urlopen('http://www.horsedeathwatch.com/'+table_cellsurls[0].attrib.\
+get('href')).read()
